@@ -47,7 +47,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline17">
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="43dp"
@@ -68,7 +68,7 @@
                 app:srcCompat="@drawable/ic_register" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/edit_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -80,6 +80,7 @@
                 android:inputType="textPersonName" />
 
             <RadioGroup
+                android:id="@+id/radio_group_sex"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -95,14 +96,14 @@
                     app:srcCompat="@drawable/sex" />
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radio_man"
                     android:layout_width="60dp"
                     android:layout_height="51dp"
                     android:layout_weight="0"
                     android:text="@string/anniu" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radio_women"
                     android:layout_width="69dp"
                     android:layout_height="51dp"
                     android:layout_weight="0"
@@ -110,7 +111,7 @@
             </RadioGroup>
 
             <EditText
-                android:id="@+id/editText15"
+                android:id="@+id/edit_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -122,7 +123,7 @@
                 android:inputType="textPassword" />
 
             <EditText
-                android:id="@+id/editText16"
+                android:id="@+id/edit_pwd_ok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -134,7 +135,7 @@
                 android:inputType="textPassword" />
 
             <EditText
-                android:id="@+id/editText17"
+                android:id="@+id/edit_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -143,10 +144,10 @@
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:hint="@string/ShouJi"
-                android:inputType="textPersonName" />
+                android:inputType="phone" />
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/switch_sms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -155,14 +156,14 @@
                 android:text="@string/jiesou" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/check_protocol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text="@string/shengming" />
 
             <Button
-                android:id="@+id/button18"
+                android:id="@+id/button_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
