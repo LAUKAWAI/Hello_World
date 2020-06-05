@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import com.example.helloworld.databinding.ActivityHomeBinding;
 
+import java.util.Objects;
+
 /**
  * @author 86176
  */
@@ -24,14 +26,14 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(mBinding.getRoot());
         //获取传过来的Intent对象
         Intent intent = getIntent();
+        //接受传过来的封装数据包
+        UserInfo u=(UserInfo) intent.getSerializableExtra("userInfo");
         //取出对应的值
-        String phone = intent.getStringExtra("data_phone");
+        String phone = Objects.requireNonNull(u).getPhone();
+        String userName = u.getUserName();
+        String userSex = u.getSex();
+        String userSms = u.getSms();
         mBinding.userPhone.setText(phone);
-
-        SharedPreferences sp = getSharedPreferences("user_info", MODE_PRIVATE);
-        String userName = sp.getString("name_" + phone, "0");
-        String userSex = sp.getString("sex_" + phone, "0");
-        String userSms = sp.getString("sms_" + phone, "0").equals("1") ? "接受" : "不接受";
         mBinding.userName.setText(userName);
         mBinding.userSex.setText(userSex);
         String temp = mBinding.userSms.getText().toString() + ":" + userSms;
