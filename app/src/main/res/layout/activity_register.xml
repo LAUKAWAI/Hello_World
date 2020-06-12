@@ -143,7 +143,7 @@
                 android:drawableStart="@drawable/phone"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="@string/ShouJi"
+                android:hint="@string/Phone"
                 android:inputType="phone" />
 
             <Switch

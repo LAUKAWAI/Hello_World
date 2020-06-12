@@ -15,7 +15,7 @@
     <string name="anniu">男</string>
     <string name="anniu1">女</string>
     <string name="quedingmima">确认密码</string>
-    <string name="ShouJi">手机号/邮箱</string>
+    <string name="Phone">手机号/邮箱</string>
     <string name="jiesou">接收消息信息</string>
     <string name="checkbox">CheckBox</string>
     <string name="shengming">同意本软件的用户服务协议和隐私政策</string>
@@ -71,4 +71,9 @@
     <string name="Gender">性别</string>
     <string name="phone">手机号码</string>
     <string name="News">接收消息推送</string>
+    <string name="UpdateYourPassword">更新密码</string>
+    <string name="NewPassword">新密码</string>
+    <string name="newpwd">新密码</string>
+    <string name="OnePwd">再次输入新密码</string>
+    <string name="edit_phone">手机</string>
 </resources>
