@@ -17,7 +17,8 @@
         <activity android:name=".DemoActivity" />
         <activity android:name=".CalculatorActivity" />
         <activity android:name=".RegisterActivity" />
-
+        <activity android:name=".ResetPwdActivity" />
+        <activity android:name=".UpdatePedActivity" />
         <activity android:name=".AlipayActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

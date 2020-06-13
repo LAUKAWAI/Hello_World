@@ -76,4 +76,5 @@
     <string name="newpwd">新密码</string>
     <string name="OnePwd">再次输入新密码</string>
     <string name="edit_phone">手机</string>
+    <string name="Forget_pwd">忘记密码</string>
 </resources>
