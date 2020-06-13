@@ -63,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //跳转忘记密码界面
+        mBinding.textForget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this,ResetPwdActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     @Override
@@ -70,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==RESULT_CODE)
         {
-            if(requestCode == RESULT_OK)
+            if(resultCode == RESULT_OK)
             {
                 String s = Objects.requireNonNull(data).getStringExtra(HomeActivity.EXIT_HOME);
                 Toast.makeText(MainActivity.this,s,Toast.LENGTH_LONG).show();
